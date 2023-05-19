@@ -40,6 +40,10 @@ public class IntroLab {
      * As a reference, we've provided the sample method exampleStudent.
      * Make sure you document your method properly!
      */
+    public String baoqingy(String greeting , String name, boolean likes_cats, String message)
+    {
+        return printLabMessage(greeting, name, likes_cats, message);
+    }
 
     /**
      * An example method that calls on printLabMessage.
@@ -52,17 +56,12 @@ public class IntroLab {
 
     public static void main(final String[] args) {
         System.out.println(exampleStudent());
-
-        /* TODO: Add a call to the method you wrote in this main method,
-         *        and print the results of it.
-         *
-         * As a reference, we've provided a sample call to exampleStudent
-         * above. Afterwards: run this file to see the output!
-         */
+       IntroLab m = new IntroLab();
+        System.out.printf(m.baoqingy("Hello", "Stu Dent", true,
+                "Welcome to CSC207!"));
 
 
     }
 
-    // TODO: Go to test/java/IntroLabTest.java afterwards and complete the TODO.
 
 }
