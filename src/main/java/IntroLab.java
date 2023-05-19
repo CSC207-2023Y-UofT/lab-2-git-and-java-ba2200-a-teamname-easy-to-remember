@@ -40,6 +40,10 @@ public class IntroLab {
      * As a reference, we've provided the sample method exampleStudent.
      * Make sure you document your method properly!
      */
+    public String baoqingy(String greeting , String name, boolean likes_cats, String message)
+    {
+        return printLabMessage(greeting, name, likes_cats, message);
+    }
 
     /**
      * An example method that calls on printLabMessage.
@@ -59,6 +63,9 @@ public class IntroLab {
          * As a reference, we've provided a sample call to exampleStudent
          * above. Afterwards: run this file to see the output!
          */
+       IntroLab m = new IntroLab();
+        System.out.printf(m.baoqingy("Hello", "Stu Dent", true,
+                "Welcome to CSC207!"));
 
 
     }
